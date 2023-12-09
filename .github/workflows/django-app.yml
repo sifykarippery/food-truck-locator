@@ -43,7 +43,7 @@ jobs:
     - name: check current folder
       run: | 
         pwd 
-        django-admin --version
+        pipenv run django-admin --version
          
         
     # - name: Run Migrations # run migrations to create table in side car db container
@@ -63,4 +63,4 @@ jobs:
         DB_DB_PORT : 5432
       run: |
         cd food_truck_locator
-        python manage.py test
+        pipenv run python manage.py test

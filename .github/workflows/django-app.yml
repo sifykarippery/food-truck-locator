@@ -43,8 +43,7 @@ jobs:
     - name: check current folder
       run: | 
         pwd 
-        cd food_truck_locator
-        ls
+        django-admin --version
          
         
     # - name: Run Migrations # run migrations to create table in side car db container

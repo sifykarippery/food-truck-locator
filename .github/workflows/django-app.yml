@@ -42,7 +42,7 @@ jobs:
         pipenv install --dev
     - name: Installing psql client
       run: |
-        apt-get install --yes --no-install-recommends postgresql-client
+        sudo apt-get install --yes --no-install-recommends postgresql-client
     - name: checking database
       run:  psql -h postgres -U postgres -c 'CREATE DATABASE app_check'
         

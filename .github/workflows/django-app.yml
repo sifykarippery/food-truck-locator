@@ -52,7 +52,19 @@ jobs:
       run: |
         cd food_truck_locator
         pipenv run python manage.py migrate
+      env:
+        DB_NAME : app_check
+        DB_USER : postgres
+        DB_USER_PASSWORD : postgres
+        DB_HOST : localhost
+        DB_PORT : 5432
     - name: load sample data# run migrations to create table in side car db container
+      env:
+        DB_NAME : app_check
+        DB_USER : postgres
+        DB_USER_PASSWORD : postgres
+        DB_HOST : localhost
+        DB_PORT : 5432
       run:  |
         cd food_truck_locator
         pipenv run python manage.py import_truck_data

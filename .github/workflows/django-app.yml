@@ -36,17 +36,6 @@ jobs:
     - name: Install dependencies
       run: |
         pipenv install
-
-    - name: Install dependencies dev
-      run: |
-        pipenv install --dev
-    - name: Installing psql client
-      run: |
-        sudo apt-get install --yes --no-install-recommends postgresql-client
-    - name: checking database
-      run:  psql -h localhost -U postgres -c 'CREATE DATABASE app_check'
-      env:
-        PGPASSWORD: postgres
         
     - name: Run Migrations # run migrations to create table in side car db container
       run: |

@@ -40,6 +40,9 @@ jobs:
     - name: Install dependencies dev
       run: |
         pipenv install --dev
+    - name: check current folder
+      run: | 
+        pwd 
         
     - name: Run Migrations # run migrations to create table in side car db container
       run: python manage.py migrate

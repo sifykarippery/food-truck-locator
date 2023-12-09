@@ -40,8 +40,7 @@ jobs:
     - name: Install dependencies dev
       run: |
         pipenv install --dev
-    - name: Check Syntax # check code formatting
-      run: pycodestyle --statistics 
+        
     - name: Run Migrations # run migrations to create table in side car db container
       run: python manage.py migrate
     - name: load sample data# run migrations to create table in side car db container

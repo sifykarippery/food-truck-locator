@@ -44,7 +44,7 @@ jobs:
       run: |
         sudo apt-get install --yes --no-install-recommends postgresql-client
     - name: checking database
-      run:  psql -h postgres -U postgres -c 'CREATE DATABASE app_check'
+      run:  psql -h localhost -U postgres -c 'CREATE DATABASE app_check'
         
     - name: Run Migrations # run migrations to create table in side car db container
       run: |

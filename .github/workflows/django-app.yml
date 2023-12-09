@@ -45,14 +45,14 @@ jobs:
         pwd 
         ls
         
-    - name: Run Migrations # run migrations to create table in side car db container
-      run: |
-        cd food_truck_locator
-        python manage.py migrate
-    - name: load sample data# run migrations to create table in side car db container
-      run:  |
-        cd food_truck_locator
-        python manage.py import_truck_data
+    # - name: Run Migrations # run migrations to create table in side car db container
+    #   run: |
+    #     cd food_truck_locator
+    #     python manage.py migrate
+    # - name: load sample data# run migrations to create table in side car db container
+    #   run:  |
+    #     cd food_truck_locator
+    #     python manage.py import_truck_data
     - name: Run pyest
       env:
         DB_NAME : app_check

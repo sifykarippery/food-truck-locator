@@ -56,7 +56,7 @@ jobs:
         DB_USER : postgres
         DB_USER_PASSWORD : postgres
         DB_HOST : localhost
-        DB_DB_PORT : 5432
+        DB_PORT : 5432
       run: |
         cd food_truck_locator
         pipenv run python manage.py test

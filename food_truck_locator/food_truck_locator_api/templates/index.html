@@ -103,7 +103,7 @@
                                         <td>{{truck.food_items}}</td>
                                         <td>{{truck.latitude}}</td>
                                         <td>{{truck.longitude}}</td>
-                                        <td>{{truck.distance_miles}}</td>
+                                        <td>{{truck.distance_miles | floatformat:2 }}</td>
 
                                     </tr>
                                     {% endfor %}

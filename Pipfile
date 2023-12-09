@@ -9,6 +9,7 @@ markdown = "*"
 django = "*"
 django-filter = "*"
 psycopg2-binary = "*"
+python-dotenv = "*"
 
 [dev-packages]
 

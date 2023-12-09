@@ -57,7 +57,7 @@ jobs:
       run:  |
         cd food_truck_locator
         pipenv run python manage.py import_truck_data
-    - name: Run pyest
+    - name: Run Django
       env:
         DB_NAME : app_check
         DB_USER : postgres

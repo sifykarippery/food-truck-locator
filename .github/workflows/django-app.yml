@@ -43,7 +43,9 @@ jobs:
     - name: check current folder
       run: | 
         pwd 
+        cd food_truck_locator
         ls
+         
         
     # - name: Run Migrations # run migrations to create table in side car db container
     #   run: |

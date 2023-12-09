@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('star-wars/', include('food_truck_locator_api.urls'))
+    path('', include('food_truck_locator_api.urls'))
 ]

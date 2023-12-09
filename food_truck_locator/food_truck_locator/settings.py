@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'django.contrib.gis',
     'rest_framework',
-    'food_truck_locator_api.apps.FoodTruckLocatorApiConfig'
+    'food_truck_locator_api'
 ]
 
 MIDDLEWARE = [

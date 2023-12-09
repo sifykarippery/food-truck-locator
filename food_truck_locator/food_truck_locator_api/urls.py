@@ -1,12 +1,7 @@
-from django.urls import include, path
-
-from rest_framework import routers
-
-from food_truck_locator_api.views import Truck_detailViewSet
-
-router = routers.DefaultRouter()
-router.register(r'people', Truck_detailViewSet)
+from django.urls import path
+from . import views
 
 urlpatterns = [
-   path('', include(router.urls)),
+    # Hello, world!
+    path('', views.index, name='index')
 ]

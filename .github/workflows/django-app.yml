@@ -43,6 +43,7 @@ jobs:
     - name: check current folder
       run: | 
         pwd 
+        ls
         
     - name: Run Migrations # run migrations to create table in side car db container
       run: python manage.py migrate

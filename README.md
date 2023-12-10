@@ -40,9 +40,17 @@ pythin manage.py runserver           # Run the application
 ```
 Please open http://localhost:8000 to launch the Application
 
+
 ## Deployment Flow
 
 ![Deployment Flow + Code Flow](docs/food-truck-ci-cd-flow.drawio.png "Deployment Flow")
+
+## Github Action
+setup githubaction CI/CD and passed testcases
+Action Triggers when pullrequest and push to main branch
+![Github Action](docs/githubaction.png "Deployment Flow")
+
+
 
 
 ## Things to improve

@@ -2,6 +2,7 @@
 The Problem : World Needs More Food Trucks!
 
 [![Python Django application(CI/CD)](https://github.com/sifykarippery/food-truck-locator/actions/workflows/django-app.yml/badge.svg?branch=main)](https://github.com/sifykarippery/food-truck-locator/actions/workflows/django-app.yml)
+[![CodeQL](https://github.com/sifykarippery/food-truck-locator/actions/workflows/codeql.yml/badge.svg)](https://github.com/sifykarippery/food-truck-locator/actions/workflows/codeql.yml)
 
 ## Problem Statement 
 Our team in San Francisco are on a quest to discover the hidden gems of street food, particularly food trucks! Your challenge is to to make it possible for us to find a food truck no matter where our work takes us in the city.
